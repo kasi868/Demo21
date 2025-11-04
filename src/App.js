@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
+import Home from './components/Home';
+import Header from './components/Header';
+import Dammi from './components/Dammi';
+// import ChipCards from './components/ChipCards';
+import About from './components/About';
+import Section from './components/Section';
+import Vision from './components/Vision';
+import Footer from './components/Footer';
+import ProcessSection from './components/ProcessSection';
+import HeroSection from './components/HeroSection'; 
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Dammi/>
+      <Home />
+      <HeroSection/>
+      <About />
+      {/* <ChipCards/> */}
+      <Section/>
+      {/* <ProcessSection/> */}
+      <Vision/>
+      <Footer/>
+      {/* <Header/> */}
     </div>
   );
 }
